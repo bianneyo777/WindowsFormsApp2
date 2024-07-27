@@ -285,9 +285,9 @@
             // 
             this.button3.Location = new System.Drawing.Point(459, 427);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(90, 41);
             this.button3.TabIndex = 14;
-            this.button3.Text = "elimminar";
+            this.button3.Text = "eliminar";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // inscripcion
