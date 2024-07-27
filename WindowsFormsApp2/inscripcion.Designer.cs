@@ -227,7 +227,7 @@
             this.groupBox2.Size = new System.Drawing.Size(431, 270);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "padre";
+            this.groupBox2.Text = "responsable";
             // 
             // textBox9
             // 
