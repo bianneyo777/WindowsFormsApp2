@@ -52,6 +52,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -105,6 +109,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -115,11 +123,11 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(101, 114);
+            this.groupBox1.Location = new System.Drawing.Point(27, 92);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(345, 273);
+            this.groupBox1.Size = new System.Drawing.Size(345, 424);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "alumno";
@@ -127,7 +135,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(29, 234);
+            this.textBox5.Location = new System.Drawing.Point(4, 47);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(271, 22);
@@ -135,7 +143,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(29, 190);
+            this.textBox4.Location = new System.Drawing.Point(6, 238);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(271, 22);
@@ -143,7 +151,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(29, 138);
+            this.textBox3.Location = new System.Drawing.Point(6, 186);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(271, 22);
@@ -151,7 +159,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(29, 94);
+            this.textBox2.Location = new System.Drawing.Point(6, 142);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(271, 22);
@@ -159,7 +167,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 50);
+            this.textBox1.Location = new System.Drawing.Point(6, 98);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(271, 22);
@@ -168,7 +176,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 166);
+            this.label6.Location = new System.Drawing.Point(4, 214);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 16);
             this.label6.TabIndex = 10;
@@ -177,7 +185,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 119);
+            this.label5.Location = new System.Drawing.Point(4, 167);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 16);
             this.label5.TabIndex = 9;
@@ -186,7 +194,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 79);
+            this.label4.Location = new System.Drawing.Point(4, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 8;
@@ -195,7 +203,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 215);
+            this.label3.Location = new System.Drawing.Point(2, 28);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 16);
             this.label3.TabIndex = 7;
@@ -204,7 +212,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 31);
+            this.label2.Location = new System.Drawing.Point(4, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 6;
@@ -220,11 +228,11 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(547, 119);
+            this.groupBox2.Location = new System.Drawing.Point(410, 95);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(431, 270);
+            this.groupBox2.Size = new System.Drawing.Size(322, 270);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "responsable";
@@ -234,7 +242,7 @@
             this.textBox9.Location = new System.Drawing.Point(9, 186);
             this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(311, 22);
+            this.textBox9.Size = new System.Drawing.Size(271, 22);
             this.textBox9.TabIndex = 14;
             // 
             // textBox8
@@ -263,7 +271,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(145, 428);
+            this.button1.Location = new System.Drawing.Point(321, 520);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -273,7 +281,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(280, 430);
+            this.button2.Location = new System.Drawing.Point(456, 522);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 21);
@@ -283,12 +291,45 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(459, 427);
+            this.button3.Location = new System.Drawing.Point(635, 519);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(90, 41);
             this.button3.TabIndex = 14;
             this.button3.Text = "eliminar";
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(6, 281);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(95, 22);
+            this.textBox10.TabIndex = 17;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(4, 262);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 16);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "sexo";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(5, 315);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(127, 16);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "fecha de nacimiento";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(8, 335);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 19;
             // 
             // inscripcion
             // 
@@ -339,5 +380,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label12;
     }
 }
