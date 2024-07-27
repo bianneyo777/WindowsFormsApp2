@@ -73,9 +73,9 @@ namespace WindowsFormsApp2
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
-            AbrirFormulario<reportes>();
+            
         }
     }
 }
