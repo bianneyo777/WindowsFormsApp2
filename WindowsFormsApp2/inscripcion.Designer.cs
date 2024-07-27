@@ -63,13 +63,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(301, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 39);
+            this.label1.Size = new System.Drawing.Size(173, 42);
             this.label1.TabIndex = 0;
-            this.label1.Text = "inscripcion";
+            this.label1.Text = "Inscripción";
             // 
             // label7
             // 
@@ -318,37 +318,39 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(677, 268);
+            this.button1.Location = new System.Drawing.Point(677, 87);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 33);
             this.button1.TabIndex = 12;
-            this.button1.Text = "agregar";
+            this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(677, 306);
+            this.button2.Location = new System.Drawing.Point(677, 141);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 47);
+            this.button2.Size = new System.Drawing.Size(73, 47);
             this.button2.TabIndex = 13;
             this.button2.Text = "Actualizar";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(677, 358);
+            this.button3.Location = new System.Drawing.Point(677, 201);
             this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(68, 33);
             this.button3.TabIndex = 14;
-            this.button3.Text = "eliminar";
+            this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // inscripcion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -358,6 +360,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "inscripcion";
+            this.Load += new System.EventHandler(this.inscripcion_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
