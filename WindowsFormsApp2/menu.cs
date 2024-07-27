@@ -63,5 +63,10 @@ namespace WindowsFormsApp2
         {
             AbrirFormulario<grado>();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<reportes>();
+        }
     }
 }
