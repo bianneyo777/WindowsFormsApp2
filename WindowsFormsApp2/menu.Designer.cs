@@ -31,12 +31,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panelformularios = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panelformularios = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -78,33 +78,14 @@
             this.panel2.Size = new System.Drawing.Size(1024, 42);
             this.panel2.TabIndex = 1;
             // 
-            // button1
+            // button5
             // 
-            this.button1.Location = new System.Drawing.Point(45, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Inscripcion";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(130, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(79, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "docentes";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(215, 9);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Grados";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button5.Location = new System.Drawing.Point(13, 9);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(26, 23);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "1";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -115,6 +96,35 @@
             this.button4.Text = "reportes";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(215, 9);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(79, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Grados";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(130, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(79, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "docentes";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(45, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Inscripcion";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panelformularios
             // 
             this.panelformularios.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -122,15 +132,6 @@
             this.panelformularios.Name = "panelformularios";
             this.panelformularios.Size = new System.Drawing.Size(1024, 666);
             this.panelformularios.TabIndex = 2;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(13, 9);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(26, 23);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "1";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // menu
             // 

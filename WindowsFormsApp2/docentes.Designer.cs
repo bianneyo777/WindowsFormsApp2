@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconSplitButton1 = new FontAwesome.Sharp.IconSplitButton();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -47,18 +46,6 @@
             this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
-            // 
-            // iconSplitButton1
-            // 
-            this.iconSplitButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconSplitButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconSplitButton1.IconColor = System.Drawing.Color.Black;
-            this.iconSplitButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconSplitButton1.IconSize = 48;
-            this.iconSplitButton1.Name = "iconSplitButton1";
-            this.iconSplitButton1.Rotation = 0D;
-            this.iconSplitButton1.Size = new System.Drawing.Size(23, 23);
-            this.iconSplitButton1.Text = "iconSplitButton1";
             // 
             // button1
             // 
@@ -99,7 +86,6 @@
         #endregion
 
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private FontAwesome.Sharp.IconSplitButton iconSplitButton1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkBox1;
     }
