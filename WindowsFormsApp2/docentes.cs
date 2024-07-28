@@ -43,6 +43,7 @@ namespace WindowsFormsApp2
             string insertar = "Inser into Maestros(Nombrema,Nombrema2,Apellidoma,Apellidoma2,Direccionma,Cedularma, Celular_maestro,Fechaingresoma,FechaSalidaMa)"
                 + "Values(@Nombrema, @Nombrema2, @Apellidoma, @Apellidoma2, @Direccionma, @Cedulama, @Celular_Maestro)";
 
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
