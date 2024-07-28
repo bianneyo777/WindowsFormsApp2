@@ -40,30 +40,31 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.PNombretext = new System.Windows.Forms.TextBox();
+            this.SNombretext = new System.Windows.Forms.TextBox();
+            this.PApellidotext = new System.Windows.Forms.TextBox();
+            this.SApellidotext = new System.Windows.Forms.TextBox();
+            this.Direcciontext = new System.Windows.Forms.TextBox();
+            this.Celulartext = new System.Windows.Forms.TextBox();
+            this.Cedulatext = new System.Windows.Forms.TextBox();
+            this.FIngresotext = new System.Windows.Forms.TextBox();
+            this.FSalidatext = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.FSalidatext);
+            this.groupBox1.Controls.Add(this.FIngresotext);
+            this.groupBox1.Controls.Add(this.Cedulatext);
+            this.groupBox1.Controls.Add(this.Celulartext);
+            this.groupBox1.Controls.Add(this.Direcciontext);
+            this.groupBox1.Controls.Add(this.SApellidotext);
+            this.groupBox1.Controls.Add(this.PApellidotext);
+            this.groupBox1.Controls.Add(this.SNombretext);
+            this.groupBox1.Controls.Add(this.PNombretext);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
@@ -179,68 +180,69 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // textBox1
+            // PNombretext
             // 
-            this.textBox1.Location = new System.Drawing.Point(34, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 9;
+            this.PNombretext.Location = new System.Drawing.Point(34, 32);
+            this.PNombretext.Name = "PNombretext";
+            this.PNombretext.Size = new System.Drawing.Size(100, 20);
+            this.PNombretext.TabIndex = 9;
+            this.PNombretext.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // SNombretext
             // 
-            this.textBox2.Location = new System.Drawing.Point(23, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 10;
+            this.SNombretext.Location = new System.Drawing.Point(23, 85);
+            this.SNombretext.Name = "SNombretext";
+            this.SNombretext.Size = new System.Drawing.Size(100, 20);
+            this.SNombretext.TabIndex = 10;
             // 
-            // textBox3
+            // PApellidotext
             // 
-            this.textBox3.Location = new System.Drawing.Point(23, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 11;
+            this.PApellidotext.Location = new System.Drawing.Point(23, 151);
+            this.PApellidotext.Name = "PApellidotext";
+            this.PApellidotext.Size = new System.Drawing.Size(100, 20);
+            this.PApellidotext.TabIndex = 11;
             // 
-            // textBox4
+            // SApellidotext
             // 
-            this.textBox4.Location = new System.Drawing.Point(17, 226);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 12;
+            this.SApellidotext.Location = new System.Drawing.Point(17, 226);
+            this.SApellidotext.Name = "SApellidotext";
+            this.SApellidotext.Size = new System.Drawing.Size(100, 20);
+            this.SApellidotext.TabIndex = 12;
             // 
-            // textBox5
+            // Direcciontext
             // 
-            this.textBox5.Location = new System.Drawing.Point(268, 32);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 13;
+            this.Direcciontext.Location = new System.Drawing.Point(268, 32);
+            this.Direcciontext.Name = "Direcciontext";
+            this.Direcciontext.Size = new System.Drawing.Size(100, 20);
+            this.Direcciontext.TabIndex = 13;
             // 
-            // textBox6
+            // Celulartext
             // 
-            this.textBox6.Location = new System.Drawing.Point(262, 85);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 14;
+            this.Celulartext.Location = new System.Drawing.Point(262, 85);
+            this.Celulartext.Name = "Celulartext";
+            this.Celulartext.Size = new System.Drawing.Size(100, 20);
+            this.Celulartext.TabIndex = 14;
             // 
-            // textBox7
+            // Cedulatext
             // 
-            this.textBox7.Location = new System.Drawing.Point(262, 124);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 15;
+            this.Cedulatext.Location = new System.Drawing.Point(262, 124);
+            this.Cedulatext.Name = "Cedulatext";
+            this.Cedulatext.Size = new System.Drawing.Size(100, 20);
+            this.Cedulatext.TabIndex = 15;
             // 
-            // textBox8
+            // FIngresotext
             // 
-            this.textBox8.Location = new System.Drawing.Point(262, 184);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 16;
+            this.FIngresotext.Location = new System.Drawing.Point(262, 184);
+            this.FIngresotext.Name = "FIngresotext";
+            this.FIngresotext.Size = new System.Drawing.Size(100, 20);
+            this.FIngresotext.TabIndex = 16;
             // 
-            // textBox9
+            // FSalidatext
             // 
-            this.textBox9.Location = new System.Drawing.Point(254, 246);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 17;
+            this.FSalidatext.Location = new System.Drawing.Point(254, 246);
+            this.FSalidatext.Name = "FSalidatext";
+            this.FSalidatext.Size = new System.Drawing.Size(100, 20);
+            this.FSalidatext.TabIndex = 17;
             // 
             // label10
             // 
@@ -252,11 +254,22 @@
             this.label10.TabIndex = 2;
             this.label10.Text = "Docente";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(396, 246);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // docentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -282,15 +295,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox PNombretext;
+        private System.Windows.Forms.TextBox SNombretext;
+        private System.Windows.Forms.TextBox FSalidatext;
+        private System.Windows.Forms.TextBox FIngresotext;
+        private System.Windows.Forms.TextBox Cedulatext;
+        private System.Windows.Forms.TextBox Celulartext;
+        private System.Windows.Forms.TextBox Direcciontext;
+        private System.Windows.Forms.TextBox SApellidotext;
+        private System.Windows.Forms.TextBox PApellidotext;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button1;
     }
 }

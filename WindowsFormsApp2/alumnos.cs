@@ -72,5 +72,10 @@ namespace WindowsFormsApp2
             MessageBox.Show("los datos fueron anadidos");
             dataGridView1.DataSource = llenar_grid();
         }
+
+        private void nombre1text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
