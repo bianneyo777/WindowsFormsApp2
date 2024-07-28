@@ -77,5 +77,10 @@ namespace WindowsFormsApp2
         {
             AbrirFormulario<reportes>();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<alumnos>();
+        }
     }
 }
