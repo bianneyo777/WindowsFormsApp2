@@ -47,7 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(290, 9);
+            this.label1.Location = new System.Drawing.Point(235, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 35);
             this.label1.TabIndex = 0;
@@ -75,7 +75,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(178, 34);
+            this.label5.Location = new System.Drawing.Point(189, 111);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 4;
@@ -84,7 +84,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(178, 114);
+            this.label3.Location = new System.Drawing.Point(216, 34);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 5;
@@ -93,7 +93,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(291, 34);
+            this.label6.Location = new System.Drawing.Point(6, 188);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 13);
             this.label6.TabIndex = 6;
@@ -108,7 +108,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(297, 111);
+            this.textBox3.Location = new System.Drawing.Point(6, 220);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 9;
@@ -124,7 +124,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(140, 63);
+            this.comboBox2.Location = new System.Drawing.Point(155, 146);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(111, 21);
             this.comboBox2.TabIndex = 13;
@@ -132,7 +132,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(151, 146);
+            this.comboBox3.Location = new System.Drawing.Point(166, 64);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(100, 21);
             this.comboBox3.TabIndex = 14;
@@ -150,9 +150,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(101, 76);
+            this.groupBox1.Location = new System.Drawing.Point(106, 56);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(472, 262);
+            this.groupBox1.Size = new System.Drawing.Size(409, 283);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
