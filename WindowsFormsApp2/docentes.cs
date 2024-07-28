@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -40,8 +41,20 @@ namespace WindowsFormsApp2
         private void button1_Click(object sender, EventArgs e)
         {
             conexion.conectar();
-            string insertar = "Inser into Maestros(Nombrema,Nombrema2,Apellidoma,Apellidoma2,Direccionma,Cedularma, Celular_maestro,Fechaingresoma,FechaSalidaMa)"
-                + "Values(@Nombrema, @Nombrema2, @Apellidoma, @Apellidoma2, @Direccionma, @Cedulama, @Celular_Maestro)";
+            string insertar = "Inser into Maestros(Nombrema,Nombrema2,Apellidoma,Apellidoma2,Direccionma,Cedularma, Celular_maestro,Fechaingresoma,FechaSalidaMa)"+
+                 "Values(@Nombrema,@Nombrema2,@Apellidoma,@Apellidoma2,@Direccionma,@Cedulama,@Celular_maestro,@Fechaingresoma,@FechaSalidaMa)";
+            SqlCommand cmd1 = new SqlCommand(insertar, conexion.conectar());
+
+            cmd1.Parameters.AddWithValue("@nombrema", PNombretext.Text);
+            cmd1.Parameters.AddWithValue("@nombrema2", SNombretext.Text);
+            cmd1.Parameters.AddWithValue("@apellidoma", PApellidotext.Text;
+            cmd1.Parameters.AddWithValue("@apellidoma2", SApellidotext.Text);
+            cmd1.Parameters.AddWithValue("@Fechaingresoma", fechain.Value);
+            cmd1.Parameters.AddWithValue("@FechaSalidaMa", fechasali.Value);
+            cmd1.Parameters.AddWithValue("@Celulama", Cedulatext.Text); 
+            cmd1.Parameters.AddWithValue("@celular_maestro",Celulartext.Text);
+            cmd1.Parameters.AddWithValue("@direccionma", Direcciontext.Text);
+
 
 
         }

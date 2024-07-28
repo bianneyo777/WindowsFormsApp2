@@ -47,17 +47,17 @@
             this.Direcciontext = new System.Windows.Forms.TextBox();
             this.Celulartext = new System.Windows.Forms.TextBox();
             this.Cedulatext = new System.Windows.Forms.TextBox();
-            this.FIngresotext = new System.Windows.Forms.TextBox();
-            this.FSalidatext = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.fechain = new System.Windows.Forms.DateTimePicker();
+            this.fechasali = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.FSalidatext);
-            this.groupBox1.Controls.Add(this.FIngresotext);
+            this.groupBox1.Controls.Add(this.fechasali);
+            this.groupBox1.Controls.Add(this.fechain);
             this.groupBox1.Controls.Add(this.Cedulatext);
             this.groupBox1.Controls.Add(this.Celulartext);
             this.groupBox1.Controls.Add(this.Direcciontext);
@@ -230,20 +230,6 @@
             this.Cedulatext.Size = new System.Drawing.Size(100, 20);
             this.Cedulatext.TabIndex = 15;
             // 
-            // FIngresotext
-            // 
-            this.FIngresotext.Location = new System.Drawing.Point(262, 184);
-            this.FIngresotext.Name = "FIngresotext";
-            this.FIngresotext.Size = new System.Drawing.Size(100, 20);
-            this.FIngresotext.TabIndex = 16;
-            // 
-            // FSalidatext
-            // 
-            this.FSalidatext.Location = new System.Drawing.Point(254, 246);
-            this.FSalidatext.Name = "FSalidatext";
-            this.FSalidatext.Size = new System.Drawing.Size(100, 20);
-            this.FSalidatext.TabIndex = 17;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -263,6 +249,20 @@
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // fechain
+            // 
+            this.fechain.Location = new System.Drawing.Point(168, 184);
+            this.fechain.Name = "fechain";
+            this.fechain.Size = new System.Drawing.Size(200, 20);
+            this.fechain.TabIndex = 16;
+            // 
+            // fechasali
+            // 
+            this.fechasali.Location = new System.Drawing.Point(168, 246);
+            this.fechasali.Name = "fechasali";
+            this.fechasali.Size = new System.Drawing.Size(200, 20);
+            this.fechasali.TabIndex = 17;
             // 
             // docentes
             // 
@@ -297,8 +297,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox PNombretext;
         private System.Windows.Forms.TextBox SNombretext;
-        private System.Windows.Forms.TextBox FSalidatext;
-        private System.Windows.Forms.TextBox FIngresotext;
         private System.Windows.Forms.TextBox Cedulatext;
         private System.Windows.Forms.TextBox Celulartext;
         private System.Windows.Forms.TextBox Direcciontext;
@@ -306,5 +304,7 @@
         private System.Windows.Forms.TextBox PApellidotext;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker fechasali;
+        private System.Windows.Forms.DateTimePicker fechain;
     }
 }
