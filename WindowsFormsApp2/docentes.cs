@@ -17,6 +17,26 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+        public static SqlConnection conectar()
+        {
+            SqlConnection cn = new SqlConnection("server=MSI\\SQLEXPRESS;database= escuela24; integrated security= true");
+            cn.Open();
+            return cn;
+        }
+
+
+        public DataTable llenar_grid()
+        {
+            conexion.conectar();
+            DataTable dt = new DataTable();
+            string consulta = "select *from maestros";
+            SqlCommand cmd = new SqlCommand(consulta, conectar());
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            return dt;
+
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
