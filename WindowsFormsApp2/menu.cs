@@ -85,7 +85,12 @@ namespace WindowsFormsApp2
 
         private void button7_Click(object sender, EventArgs e)
         {
+            AbrirFormulario<secciones>();
+        }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<turnos>();
         }
     }
 }

@@ -181,6 +181,7 @@
             this.button8.TabIndex = 6;
             this.button8.Text = "turnos";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // menu
             // 
