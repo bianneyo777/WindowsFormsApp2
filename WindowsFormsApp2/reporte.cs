@@ -16,5 +16,18 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void reporte_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+            this.reportViewer1.RefreshReport();
+        }
     }
 }
