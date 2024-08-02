@@ -60,7 +60,7 @@
       <DependentUpon>alumnos.cs</DependentUpon>
     </Compile>
     <Compile Include="capadatos\conexionBD.cs" />
-    <Compile Include="capadatos\inscripcion.cs" />
+    <Compile Include="capadatos\inscripcio.cs" />
     <Compile Include="conexion.cs" />
     <Compile Include="docentes.cs">
       <SubType>Form</SubType>
