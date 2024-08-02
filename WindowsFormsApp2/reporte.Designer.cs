@@ -28,8 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.button1 = new System.Windows.Forms.Button();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.escuela24DataSet1 = new WindowsFormsApp2.Escuela24DataSet1();
+            this.escuela24DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.maestrosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.maestrosTableAdapter = new WindowsFormsApp2.Escuela24DataSet1TableAdapters.MaestrosTableAdapter();
+            this.maestrosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -44,12 +55,39 @@
             // 
             // reportViewer1
             // 
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.maestrosBindingSource1;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApp2.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(44, 96);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(636, 246);
             this.reportViewer1.TabIndex = 2;
+            // 
+            // escuela24DataSet1
+            // 
+            this.escuela24DataSet1.DataSetName = "Escuela24DataSet1";
+            this.escuela24DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // escuela24DataSet1BindingSource
+            // 
+            this.escuela24DataSet1BindingSource.DataSource = this.escuela24DataSet1;
+            this.escuela24DataSet1BindingSource.Position = 0;
+            // 
+            // maestrosBindingSource
+            // 
+            this.maestrosBindingSource.DataMember = "Maestros";
+            this.maestrosBindingSource.DataSource = this.escuela24DataSet1BindingSource;
+            // 
+            // maestrosTableAdapter
+            // 
+            this.maestrosTableAdapter.ClearBeforeFill = true;
+            // 
+            // maestrosBindingSource1
+            // 
+            this.maestrosBindingSource1.DataMember = "Maestros";
+            this.maestrosBindingSource1.DataSource = this.escuela24DataSet1BindingSource;
             // 
             // reporte
             // 
@@ -62,6 +100,10 @@
             this.Name = "reporte";
             this.Text = "reporte";
             this.Load += new System.EventHandler(this.reporte_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -70,5 +112,10 @@
 
         private System.Windows.Forms.Button button1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Escuela24DataSet1 escuela24DataSet1;
+        private System.Windows.Forms.BindingSource escuela24DataSet1BindingSource;
+        private System.Windows.Forms.BindingSource maestrosBindingSource;
+        private Escuela24DataSet1TableAdapters.MaestrosTableAdapter maestrosTableAdapter;
+        private System.Windows.Forms.BindingSource maestrosBindingSource1;
     }
 }

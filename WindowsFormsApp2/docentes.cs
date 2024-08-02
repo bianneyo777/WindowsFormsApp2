@@ -92,7 +92,9 @@ namespace WindowsFormsApp2
             // TODO: esta línea de código carga datos en la tabla 'escuela24DataSet7.Maestros' Puede moverla o quitarla según sea necesario.
             this.maestrosTableAdapter1.Fill(this.escuela24DataSet7.Maestros);
             // TODO: esta línea de código carga datos en la tabla 'escuela24DataSet1.Maestros' Puede moverla o quitarla según sea necesario.
-          
+            this.maestrosTableAdapter.Fill(this.escuela24DataSet1.Maestros);
+
+            this.reportViewer1.RefreshReport();
         }
 
         private void button2_Click(object sender, EventArgs e)

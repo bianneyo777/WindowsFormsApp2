@@ -19,6 +19,8 @@ namespace WindowsFormsApp2
 
         private void reporte_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'escuela24DataSet1.Maestros' Puede moverla o quitarla según sea necesario.
+            this.maestrosTableAdapter.Fill(this.escuela24DataSet1.Maestros);
 
             this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
@@ -26,7 +28,8 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-         
+            WindowsFormsApp2.reporte rpt1 = new WindowsFormsApp2.reporte();
+          
             this.reportViewer1.RefreshReport();
         }
     }
