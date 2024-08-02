@@ -28,7 +28,7 @@ namespace WindowsFormsApp2.capadatos
             leeefilas.Close();
             conexion1.cerrarconexion();
             return tabla;
-      
+
         }
         public DataTable listarturno()
         {
@@ -38,8 +38,8 @@ namespace WindowsFormsApp2.capadatos
             comando.CommandType = CommandType.StoredProcedure;
             leeefilas = comando.ExecuteReader();
             tabla.Load(leeefilas);
-            leeefilas.Close();
-            conexion1.cerrarconexion();
+          
+           
             return tabla;
         }
 
@@ -69,7 +69,34 @@ namespace WindowsFormsApp2.capadatos
             return tabla;
         }
 
+        public void insertarincripcion(int AlumnoID,int GradoID,int SeccionID,int TurnoID,DateTime FechaInscripcion)
+        {
+            comando.Connection = conexion1.abrirconexion();
+            comando.CommandText = "insertarinscripcion";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@AlumnoID", AlumnoID);
+            comando.Parameters.AddWithValue("@GradoID", GradoID);
+            comando.Parameters.AddWithValue("@SeccionID", SeccionID);
+            comando.Parameters.AddWithValue("@TurnoID",TurnoID );
+            comando.Parameters.AddWithValue("@FechaInscripcion", FechaInscripcion);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
 
 
+
+        }
+
+        public DataTable mostrains()
+        {
+            DataTable tabla = new DataTable();
+            comando.Connection = conexion1.abrirconexion();
+            comando.CommandText = "mostrains";
+            comando.CommandType = CommandType.StoredProcedure;
+            leeefilas = comando.ExecuteReader();
+            tabla.Load(leeefilas);
+            leeefilas.Close();
+            conexion1.cerrarconexion();
+            return tabla;
+        }
     }
 }

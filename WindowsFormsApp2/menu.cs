@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace WindowsFormsApp2
 {
     public partial class menu : Form
@@ -47,6 +49,8 @@ namespace WindowsFormsApp2
         private void button1_Click(object sender, EventArgs e)
         {
             AbrirFormulario<inscripcion>();
+          
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
