@@ -126,6 +126,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Escuela24DataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Escuela24DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Escuela24DataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +287,17 @@
     </None>
     <None Include="Escuela24DataSet5.xss">
       <DependentUpon>Escuela24DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Escuela24DataSet6.xsc">
+      <DependentUpon>Escuela24DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Escuela24DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Escuela24DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Escuela24DataSet6.xss">
+      <DependentUpon>Escuela24DataSet6.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

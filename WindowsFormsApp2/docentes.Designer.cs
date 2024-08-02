@@ -51,24 +51,13 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.escuela24DataSet1 = new WindowsFormsApp2.Escuela24DataSet1();
             this.maestrosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.escuela24DataSet1 = new WindowsFormsApp2.Escuela24DataSet1();
             this.maestrosTableAdapter = new WindowsFormsApp2.Escuela24DataSet1TableAdapters.MaestrosTableAdapter();
-            this.maestroIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombremaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombrema2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidomaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidoma2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccionmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cedulamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.celularmaestroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaIngresomaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaSalidamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -92,9 +81,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 4);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(491, 444);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -103,7 +92,7 @@
             // fechasali
             // 
             this.fechasali.Location = new System.Drawing.Point(224, 303);
-            this.fechasali.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fechasali.Margin = new System.Windows.Forms.Padding(4);
             this.fechasali.Name = "fechasali";
             this.fechasali.Size = new System.Drawing.Size(265, 22);
             this.fechasali.TabIndex = 17;
@@ -111,7 +100,7 @@
             // fechain
             // 
             this.fechain.Location = new System.Drawing.Point(224, 226);
-            this.fechain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fechain.Margin = new System.Windows.Forms.Padding(4);
             this.fechain.Name = "fechain";
             this.fechain.Size = new System.Drawing.Size(265, 22);
             this.fechain.TabIndex = 16;
@@ -119,7 +108,7 @@
             // Cedulatext
             // 
             this.Cedulatext.Location = new System.Drawing.Point(349, 153);
-            this.Cedulatext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cedulatext.Margin = new System.Windows.Forms.Padding(4);
             this.Cedulatext.Name = "Cedulatext";
             this.Cedulatext.Size = new System.Drawing.Size(132, 22);
             this.Cedulatext.TabIndex = 15;
@@ -127,7 +116,7 @@
             // Celulartext
             // 
             this.Celulartext.Location = new System.Drawing.Point(349, 105);
-            this.Celulartext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Celulartext.Margin = new System.Windows.Forms.Padding(4);
             this.Celulartext.Name = "Celulartext";
             this.Celulartext.Size = new System.Drawing.Size(132, 22);
             this.Celulartext.TabIndex = 14;
@@ -135,7 +124,7 @@
             // Direcciontext
             // 
             this.Direcciontext.Location = new System.Drawing.Point(357, 39);
-            this.Direcciontext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Direcciontext.Margin = new System.Windows.Forms.Padding(4);
             this.Direcciontext.Name = "Direcciontext";
             this.Direcciontext.Size = new System.Drawing.Size(132, 22);
             this.Direcciontext.TabIndex = 13;
@@ -143,7 +132,7 @@
             // SApellidotext
             // 
             this.SApellidotext.Location = new System.Drawing.Point(23, 278);
-            this.SApellidotext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SApellidotext.Margin = new System.Windows.Forms.Padding(4);
             this.SApellidotext.Name = "SApellidotext";
             this.SApellidotext.Size = new System.Drawing.Size(132, 22);
             this.SApellidotext.TabIndex = 12;
@@ -151,7 +140,7 @@
             // PApellidotext
             // 
             this.PApellidotext.Location = new System.Drawing.Point(31, 186);
-            this.PApellidotext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PApellidotext.Margin = new System.Windows.Forms.Padding(4);
             this.PApellidotext.Name = "PApellidotext";
             this.PApellidotext.Size = new System.Drawing.Size(132, 22);
             this.PApellidotext.TabIndex = 11;
@@ -159,7 +148,7 @@
             // SNombretext
             // 
             this.SNombretext.Location = new System.Drawing.Point(31, 105);
-            this.SNombretext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SNombretext.Margin = new System.Windows.Forms.Padding(4);
             this.SNombretext.Name = "SNombretext";
             this.SNombretext.Size = new System.Drawing.Size(132, 22);
             this.SNombretext.TabIndex = 10;
@@ -167,7 +156,7 @@
             // PNombretext
             // 
             this.PNombretext.Location = new System.Drawing.Point(45, 39);
-            this.PNombretext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PNombretext.Margin = new System.Windows.Forms.Padding(4);
             this.PNombretext.Name = "PNombretext";
             this.PNombretext.Size = new System.Drawing.Size(132, 22);
             this.PNombretext.TabIndex = 9;
@@ -296,7 +285,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(596, 301);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 18;
@@ -304,143 +293,47 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // maestrosBindingSource
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maestroIDDataGridViewTextBoxColumn,
-            this.nombremaDataGridViewTextBoxColumn,
-            this.nombrema2DataGridViewTextBoxColumn,
-            this.apellidomaDataGridViewTextBoxColumn,
-            this.apellidoma2DataGridViewTextBoxColumn,
-            this.direccionmaDataGridViewTextBoxColumn,
-            this.cedulamaDataGridViewTextBoxColumn,
-            this.celularmaestroDataGridViewTextBoxColumn,
-            this.fechaIngresomaDataGridViewTextBoxColumn,
-            this.fechaSalidamaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.maestrosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(550, 85);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(412, 123);
-            this.dataGridView1.TabIndex = 19;
+            this.maestrosBindingSource.DataMember = "Maestros";
+            this.maestrosBindingSource.DataSource = this.escuela24DataSet1;
             // 
             // escuela24DataSet1
             // 
             this.escuela24DataSet1.DataSetName = "Escuela24DataSet1";
             this.escuela24DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // maestrosBindingSource
-            // 
-            this.maestrosBindingSource.DataMember = "Maestros";
-            this.maestrosBindingSource.DataSource = this.escuela24DataSet1;
-            // 
             // maestrosTableAdapter
             // 
             this.maestrosTableAdapter.ClearBeforeFill = true;
             // 
-            // maestroIDDataGridViewTextBoxColumn
+            // reportViewer1
             // 
-            this.maestroIDDataGridViewTextBoxColumn.DataPropertyName = "MaestroID";
-            this.maestroIDDataGridViewTextBoxColumn.HeaderText = "MaestroID";
-            this.maestroIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.maestroIDDataGridViewTextBoxColumn.Name = "maestroIDDataGridViewTextBoxColumn";
-            this.maestroIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.maestroIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nombremaDataGridViewTextBoxColumn
-            // 
-            this.nombremaDataGridViewTextBoxColumn.DataPropertyName = "Nombrema";
-            this.nombremaDataGridViewTextBoxColumn.HeaderText = "Nombrema";
-            this.nombremaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nombremaDataGridViewTextBoxColumn.Name = "nombremaDataGridViewTextBoxColumn";
-            this.nombremaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nombrema2DataGridViewTextBoxColumn
-            // 
-            this.nombrema2DataGridViewTextBoxColumn.DataPropertyName = "Nombrema2";
-            this.nombrema2DataGridViewTextBoxColumn.HeaderText = "Nombrema2";
-            this.nombrema2DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nombrema2DataGridViewTextBoxColumn.Name = "nombrema2DataGridViewTextBoxColumn";
-            this.nombrema2DataGridViewTextBoxColumn.Width = 125;
-            // 
-            // apellidomaDataGridViewTextBoxColumn
-            // 
-            this.apellidomaDataGridViewTextBoxColumn.DataPropertyName = "Apellidoma";
-            this.apellidomaDataGridViewTextBoxColumn.HeaderText = "Apellidoma";
-            this.apellidomaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.apellidomaDataGridViewTextBoxColumn.Name = "apellidomaDataGridViewTextBoxColumn";
-            this.apellidomaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // apellidoma2DataGridViewTextBoxColumn
-            // 
-            this.apellidoma2DataGridViewTextBoxColumn.DataPropertyName = "Apellidoma2";
-            this.apellidoma2DataGridViewTextBoxColumn.HeaderText = "Apellidoma2";
-            this.apellidoma2DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.apellidoma2DataGridViewTextBoxColumn.Name = "apellidoma2DataGridViewTextBoxColumn";
-            this.apellidoma2DataGridViewTextBoxColumn.Width = 125;
-            // 
-            // direccionmaDataGridViewTextBoxColumn
-            // 
-            this.direccionmaDataGridViewTextBoxColumn.DataPropertyName = "direccionma";
-            this.direccionmaDataGridViewTextBoxColumn.HeaderText = "direccionma";
-            this.direccionmaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.direccionmaDataGridViewTextBoxColumn.Name = "direccionmaDataGridViewTextBoxColumn";
-            this.direccionmaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // cedulamaDataGridViewTextBoxColumn
-            // 
-            this.cedulamaDataGridViewTextBoxColumn.DataPropertyName = "cedulama";
-            this.cedulamaDataGridViewTextBoxColumn.HeaderText = "cedulama";
-            this.cedulamaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cedulamaDataGridViewTextBoxColumn.Name = "cedulamaDataGridViewTextBoxColumn";
-            this.cedulamaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // celularmaestroDataGridViewTextBoxColumn
-            // 
-            this.celularmaestroDataGridViewTextBoxColumn.DataPropertyName = "celular_maestro";
-            this.celularmaestroDataGridViewTextBoxColumn.HeaderText = "celular_maestro";
-            this.celularmaestroDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.celularmaestroDataGridViewTextBoxColumn.Name = "celularmaestroDataGridViewTextBoxColumn";
-            this.celularmaestroDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // fechaIngresomaDataGridViewTextBoxColumn
-            // 
-            this.fechaIngresomaDataGridViewTextBoxColumn.DataPropertyName = "FechaIngresoma";
-            this.fechaIngresomaDataGridViewTextBoxColumn.HeaderText = "FechaIngresoma";
-            this.fechaIngresomaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fechaIngresomaDataGridViewTextBoxColumn.Name = "fechaIngresomaDataGridViewTextBoxColumn";
-            this.fechaIngresomaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // fechaSalidamaDataGridViewTextBoxColumn
-            // 
-            this.fechaSalidamaDataGridViewTextBoxColumn.DataPropertyName = "FechaSalidama";
-            this.fechaSalidamaDataGridViewTextBoxColumn.HeaderText = "FechaSalidama";
-            this.fechaSalidamaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fechaSalidamaDataGridViewTextBoxColumn.Name = "fechaSalidamaDataGridViewTextBoxColumn";
-            this.fechaSalidamaDataGridViewTextBoxColumn.Width = 125;
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApp2.Report1.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(569, 121);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(396, 145);
+            this.reportViewer1.TabIndex = 19;
             // 
             // docentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "docentes";
             this.Text = "docentes";
             this.Load += new System.EventHandler(this.docentes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,19 +363,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker fechasali;
         private System.Windows.Forms.DateTimePicker fechain;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private Escuela24DataSet1 escuela24DataSet1;
         private System.Windows.Forms.BindingSource maestrosBindingSource;
         private Escuela24DataSet1TableAdapters.MaestrosTableAdapter maestrosTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maestroIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombremaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombrema2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellidomaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellidoma2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn direccionmaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cedulamaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn celularmaestroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaIngresomaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaSalidamaDataGridViewTextBoxColumn;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
