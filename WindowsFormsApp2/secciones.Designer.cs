@@ -28,16 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.escuela24DataSet4 = new WindowsFormsApp2.Escuela24DataSet4();
+            this.seccionesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.seccionesTableAdapter = new WindowsFormsApp2.Escuela24DataSet4TableAdapters.SeccionesTableAdapter();
+            this.seccionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seccionesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.seccionIDDataGridViewTextBoxColumn,
+            this.nombreseDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.seccionesBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(254, 82);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -71,6 +84,37 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "ingresar secciones";
             // 
+            // escuela24DataSet4
+            // 
+            this.escuela24DataSet4.DataSetName = "Escuela24DataSet4";
+            this.escuela24DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // seccionesBindingSource
+            // 
+            this.seccionesBindingSource.DataMember = "Secciones";
+            this.seccionesBindingSource.DataSource = this.escuela24DataSet4;
+            // 
+            // seccionesTableAdapter
+            // 
+            this.seccionesTableAdapter.ClearBeforeFill = true;
+            // 
+            // seccionIDDataGridViewTextBoxColumn
+            // 
+            this.seccionIDDataGridViewTextBoxColumn.DataPropertyName = "SeccionID";
+            this.seccionIDDataGridViewTextBoxColumn.HeaderText = "SeccionID";
+            this.seccionIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.seccionIDDataGridViewTextBoxColumn.Name = "seccionIDDataGridViewTextBoxColumn";
+            this.seccionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.seccionIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nombreseDataGridViewTextBoxColumn
+            // 
+            this.nombreseDataGridViewTextBoxColumn.DataPropertyName = "Nombrese";
+            this.nombreseDataGridViewTextBoxColumn.HeaderText = "Nombrese";
+            this.nombreseDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nombreseDataGridViewTextBoxColumn.Name = "nombreseDataGridViewTextBoxColumn";
+            this.nombreseDataGridViewTextBoxColumn.Width = 125;
+            // 
             // secciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -83,7 +127,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "secciones";
             this.Text = "secciones";
+            this.Load += new System.EventHandler(this.secciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seccionesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,5 +142,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private Escuela24DataSet4 escuela24DataSet4;
+        private System.Windows.Forms.BindingSource seccionesBindingSource;
+        private Escuela24DataSet4TableAdapters.SeccionesTableAdapter seccionesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn seccionIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreseDataGridViewTextBoxColumn;
     }
 }

@@ -52,5 +52,12 @@ namespace WindowsFormsApp2
             MessageBox.Show("los datos fueron anadidos");
             dataGridView1.DataSource = llenar_grid();
         }
+
+        private void secciones_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'escuela24DataSet4.Secciones' Puede moverla o quitarla según sea necesario.
+            this.seccionesTableAdapter.Fill(this.escuela24DataSet4.Secciones);
+
+        }
     }
 }
