@@ -87,7 +87,16 @@ namespace WindowsFormsApp2
 
         private void docentes_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'escuela24DataSet9.Maestros' Puede moverla o quitarla según sea necesario.
+            this.maestrosTableAdapter2.Fill(this.escuela24DataSet9.Maestros);
+            // TODO: esta línea de código carga datos en la tabla 'escuela24DataSet7.Maestros' Puede moverla o quitarla según sea necesario.
+            this.maestrosTableAdapter1.Fill(this.escuela24DataSet7.Maestros);
             // TODO: esta línea de código carga datos en la tabla 'escuela24DataSet1.Maestros' Puede moverla o quitarla según sea necesario.
+          
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             this.maestrosTableAdapter.Fill(this.escuela24DataSet1.Maestros);
 
             this.reportViewer1.RefreshReport();

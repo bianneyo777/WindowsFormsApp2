@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.fechasali = new System.Windows.Forms.DateTimePicker();
             this.fechain = new System.Windows.Forms.DateTimePicker();
@@ -55,9 +56,32 @@
             this.escuela24DataSet1 = new WindowsFormsApp2.Escuela24DataSet1();
             this.maestrosTableAdapter = new WindowsFormsApp2.Escuela24DataSet1TableAdapters.MaestrosTableAdapter();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.escuela24DataSet7 = new WindowsFormsApp2.Escuela24DataSet7();
+            this.maestrosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.maestrosTableAdapter1 = new WindowsFormsApp2.Escuela24DataSet7TableAdapters.MaestrosTableAdapter();
+            this.maestroIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombremaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombrema2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidomaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidoma2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cedulamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.celularmaestroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaIngresomaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaSalidamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.escuela24DataSet9 = new WindowsFormsApp2.Escuela24DataSet9();
+            this.maestrosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.maestrosTableAdapter2 = new WindowsFormsApp2.Escuela24DataSet9TableAdapters.MaestrosTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -309,6 +333,9 @@
             // 
             // reportViewer1
             // 
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.maestrosBindingSource2;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApp2.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(569, 121);
             this.reportViewer1.Name = "reportViewer1";
@@ -316,11 +343,155 @@
             this.reportViewer1.Size = new System.Drawing.Size(396, 145);
             this.reportViewer1.TabIndex = 19;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maestroIDDataGridViewTextBoxColumn,
+            this.nombremaDataGridViewTextBoxColumn,
+            this.nombrema2DataGridViewTextBoxColumn,
+            this.apellidomaDataGridViewTextBoxColumn,
+            this.apellidoma2DataGridViewTextBoxColumn,
+            this.direccionmaDataGridViewTextBoxColumn,
+            this.cedulamaDataGridViewTextBoxColumn,
+            this.celularmaestroDataGridViewTextBoxColumn,
+            this.fechaIngresomaDataGridViewTextBoxColumn,
+            this.fechaSalidamaDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.maestrosBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(542, 368);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(513, 150);
+            this.dataGridView1.TabIndex = 20;
+            // 
+            // escuela24DataSet7
+            // 
+            this.escuela24DataSet7.DataSetName = "Escuela24DataSet7";
+            this.escuela24DataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // maestrosBindingSource1
+            // 
+            this.maestrosBindingSource1.DataMember = "Maestros";
+            this.maestrosBindingSource1.DataSource = this.escuela24DataSet7;
+            // 
+            // maestrosTableAdapter1
+            // 
+            this.maestrosTableAdapter1.ClearBeforeFill = true;
+            // 
+            // maestroIDDataGridViewTextBoxColumn
+            // 
+            this.maestroIDDataGridViewTextBoxColumn.DataPropertyName = "MaestroID";
+            this.maestroIDDataGridViewTextBoxColumn.HeaderText = "MaestroID";
+            this.maestroIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maestroIDDataGridViewTextBoxColumn.Name = "maestroIDDataGridViewTextBoxColumn";
+            this.maestroIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.maestroIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nombremaDataGridViewTextBoxColumn
+            // 
+            this.nombremaDataGridViewTextBoxColumn.DataPropertyName = "Nombrema";
+            this.nombremaDataGridViewTextBoxColumn.HeaderText = "Nombrema";
+            this.nombremaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nombremaDataGridViewTextBoxColumn.Name = "nombremaDataGridViewTextBoxColumn";
+            this.nombremaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nombrema2DataGridViewTextBoxColumn
+            // 
+            this.nombrema2DataGridViewTextBoxColumn.DataPropertyName = "Nombrema2";
+            this.nombrema2DataGridViewTextBoxColumn.HeaderText = "Nombrema2";
+            this.nombrema2DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nombrema2DataGridViewTextBoxColumn.Name = "nombrema2DataGridViewTextBoxColumn";
+            this.nombrema2DataGridViewTextBoxColumn.Width = 125;
+            // 
+            // apellidomaDataGridViewTextBoxColumn
+            // 
+            this.apellidomaDataGridViewTextBoxColumn.DataPropertyName = "Apellidoma";
+            this.apellidomaDataGridViewTextBoxColumn.HeaderText = "Apellidoma";
+            this.apellidomaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.apellidomaDataGridViewTextBoxColumn.Name = "apellidomaDataGridViewTextBoxColumn";
+            this.apellidomaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // apellidoma2DataGridViewTextBoxColumn
+            // 
+            this.apellidoma2DataGridViewTextBoxColumn.DataPropertyName = "Apellidoma2";
+            this.apellidoma2DataGridViewTextBoxColumn.HeaderText = "Apellidoma2";
+            this.apellidoma2DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.apellidoma2DataGridViewTextBoxColumn.Name = "apellidoma2DataGridViewTextBoxColumn";
+            this.apellidoma2DataGridViewTextBoxColumn.Width = 125;
+            // 
+            // direccionmaDataGridViewTextBoxColumn
+            // 
+            this.direccionmaDataGridViewTextBoxColumn.DataPropertyName = "direccionma";
+            this.direccionmaDataGridViewTextBoxColumn.HeaderText = "direccionma";
+            this.direccionmaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.direccionmaDataGridViewTextBoxColumn.Name = "direccionmaDataGridViewTextBoxColumn";
+            this.direccionmaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cedulamaDataGridViewTextBoxColumn
+            // 
+            this.cedulamaDataGridViewTextBoxColumn.DataPropertyName = "cedulama";
+            this.cedulamaDataGridViewTextBoxColumn.HeaderText = "cedulama";
+            this.cedulamaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cedulamaDataGridViewTextBoxColumn.Name = "cedulamaDataGridViewTextBoxColumn";
+            this.cedulamaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // celularmaestroDataGridViewTextBoxColumn
+            // 
+            this.celularmaestroDataGridViewTextBoxColumn.DataPropertyName = "celular_maestro";
+            this.celularmaestroDataGridViewTextBoxColumn.HeaderText = "celular_maestro";
+            this.celularmaestroDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.celularmaestroDataGridViewTextBoxColumn.Name = "celularmaestroDataGridViewTextBoxColumn";
+            this.celularmaestroDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // fechaIngresomaDataGridViewTextBoxColumn
+            // 
+            this.fechaIngresomaDataGridViewTextBoxColumn.DataPropertyName = "FechaIngresoma";
+            this.fechaIngresomaDataGridViewTextBoxColumn.HeaderText = "FechaIngresoma";
+            this.fechaIngresomaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.fechaIngresomaDataGridViewTextBoxColumn.Name = "fechaIngresomaDataGridViewTextBoxColumn";
+            this.fechaIngresomaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // fechaSalidamaDataGridViewTextBoxColumn
+            // 
+            this.fechaSalidamaDataGridViewTextBoxColumn.DataPropertyName = "FechaSalidama";
+            this.fechaSalidamaDataGridViewTextBoxColumn.HeaderText = "FechaSalidama";
+            this.fechaSalidamaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.fechaSalidamaDataGridViewTextBoxColumn.Name = "fechaSalidamaDataGridViewTextBoxColumn";
+            this.fechaSalidamaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(419, 488);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // escuela24DataSet9
+            // 
+            this.escuela24DataSet9.DataSetName = "Escuela24DataSet9";
+            this.escuela24DataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // maestrosBindingSource2
+            // 
+            this.maestrosBindingSource2.DataMember = "Maestros";
+            this.maestrosBindingSource2.DataSource = this.escuela24DataSet9;
+            // 
+            // maestrosTableAdapter2
+            // 
+            this.maestrosTableAdapter2.ClearBeforeFill = true;
+            // 
             // docentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
@@ -334,6 +505,11 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escuela24DataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maestrosBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,5 +543,23 @@
         private System.Windows.Forms.BindingSource maestrosBindingSource;
         private Escuela24DataSet1TableAdapters.MaestrosTableAdapter maestrosTableAdapter;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private Escuela24DataSet7 escuela24DataSet7;
+        private System.Windows.Forms.BindingSource maestrosBindingSource1;
+        private Escuela24DataSet7TableAdapters.MaestrosTableAdapter maestrosTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maestroIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombremaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombrema2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellidomaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellidoma2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionmaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cedulamaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn celularmaestroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaIngresomaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaSalidamaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button2;
+        private Escuela24DataSet9 escuela24DataSet9;
+        private System.Windows.Forms.BindingSource maestrosBindingSource2;
+        private Escuela24DataSet9TableAdapters.MaestrosTableAdapter maestrosTableAdapter2;
     }
 }
