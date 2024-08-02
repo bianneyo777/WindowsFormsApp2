@@ -14,6 +14,6 @@ namespace WindowsFormsApp2.capadatos
         private SqlCommand comando = new SqlCommand();
         private SqlDataReader leeefilas;
 
-        public DataTable inscripciones();
+        
     }
 }

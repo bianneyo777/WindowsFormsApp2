@@ -77,11 +77,11 @@
             this.gradoIDDataGridViewTextBoxColumn,
             this.nombregrDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.gradosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(419, 95);
+            this.dataGridView1.Location = new System.Drawing.Point(341, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(304, 156);
+            this.dataGridView1.Size = new System.Drawing.Size(447, 156);
             this.dataGridView1.TabIndex = 3;
             // 
             // escuela24DataSet2
